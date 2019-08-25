@@ -75,7 +75,7 @@ dependencies {
     implementation "com.mikepenz:iconics-core:2.8.2"
     implementation "com.mikepenz:materialdrawer:5.8.1"
     implementation "com.mikepenz:materialize:1.0.0"
-    implementation "com.twofortyfouram:android-plugin-api-for-locale:1.0.2"
+    implementation "com.twofortyfouram:android-plugin-api-for-locale:1.0.4"
     implementation "dnsjava:dnsjava:2.1.7"
     implementation "eu.chainfire:libsuperuser:latest.release"
     implementation "me.dm7.barcodescanner:zxing:1.9.8"
