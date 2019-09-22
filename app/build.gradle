@@ -2,19 +2,19 @@ apply plugin: 'com.android.application'
 
 buildscript {
     ext {
-        support_version = "28.0.0"
-        compile_Version = 28
-        min_version = 21
-        target_version = 26
+//        support_version = "29.0.4"
+//        compile_Version = 29
+//        min_version = 21
+//        target_version = 28
     }
 }
 
 android {
-    compileSdkVersion compile_Version
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.github.shadowsocks"
-        minSdkVersion min_version
-        targetSdkVersion target_version
+        minSdkVersion 21
+        targetSdkVersion 28
         versionCode 325    // multiDex的一些相关配置，这样配置可以让你的编译速度更快
         dexOptions {
             // 让它不要对Lib做preDexing
@@ -28,7 +28,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-frtti -fexceptions"
-                abiFilters "armeabi-v7a", "x86"
+                abiFilters "armeabi-v7a"/*, "x86"*/
             }
         }
         multiDexEnabled true

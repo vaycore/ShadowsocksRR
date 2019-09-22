@@ -1,0 +1,81 @@
+
+{
+	"buildFiles" : [ "/home/pt/project/android/ShadowsocksRR/app/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"ancillary-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "ancillary",
+			"buildCommand" : "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86 --target ancillary",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dancillary_EXPORTS -I../../../../src/main/cpp/cpufeatures -I../../../../src/main/cpp/ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/pt/project/android/ShadowsocksRR/app/src/main/cpp/ancillary/fd_recv.c",
+					"workingDirectory" : "/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dancillary_EXPORTS -I../../../../src/main/cpp/cpufeatures -I../../../../src/main/cpp/ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/pt/project/android/ShadowsocksRR/app/src/main/cpp/ancillary/fd_send.c",
+					"workingDirectory" : "/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86"
+				}
+			],
+			"output" : "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/x86/libancillary.so",
+			"toolchain" : "427997980406692562"
+		},
+		"cpufeatures-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "cpufeatures",
+			"buildCommand" : "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86 --target cpufeatures",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dcpufeatures_EXPORTS -I../../../../src/main/cpp/cpufeatures -I../../../../src/main/cpp/ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/pt/project/android/ShadowsocksRR/app/src/main/cpp/cpufeatures/cpu-features.c",
+					"workingDirectory" : "/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86"
+				}
+			],
+			"output" : "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/x86/libcpufeatures.so",
+			"toolchain" : "427997980406692562"
+		},
+		"system-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "system",
+			"buildCommand" : "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86 --target system",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dsystem_EXPORTS -I../../../../src/main/cpp/cpufeatures -I../../../../src/main/cpp/ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/pt/project/android/ShadowsocksRR/app/src/main/cpp/system.cpp",
+					"workingDirectory" : "/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86"
+				}
+			],
+			"output" : "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/x86/libsystem.so",
+			"toolchain" : "427997980406692562"
+		}
+	},
+	"toolchains" : 
+	{
+		"427997980406692562" : 
+		{
+			"cCompilerExecutable" : "/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

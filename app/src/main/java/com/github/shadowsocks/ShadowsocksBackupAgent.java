@@ -45,7 +45,7 @@ import android.app.backup.SharedPreferencesBackupHelper;
 import com.github.shadowsocks.database.DBHelper;
 
 public class ShadowsocksBackupAgent extends BackupAgentHelper {
-
+     
     /**
      * The names of the SharedPreferences groups that the application maintains.  These
      * are the same strings that are passed to getSharedPreferences(String, int).

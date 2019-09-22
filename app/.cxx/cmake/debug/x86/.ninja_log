@@ -1,0 +1,8 @@
+# ninja log v5
+1	321	0	CMakeFiles/ancillary.dir/src/main/cpp/ancillary/fd_send.c.o	cb3e9553e0e064e2
+1	323	0	CMakeFiles/ancillary.dir/src/main/cpp/ancillary/fd_recv.c.o	7df55fa595e95455
+323	350	0	../../../../build/intermediates/cmake/debug/obj/x86/libancillary.so	e804528273df2e50
+1	67	0	CMakeFiles/cpufeatures.dir/src/main/cpp/cpufeatures/cpu-features.c.o	e541dfda4e2a5cfc
+67	77	0	../../../../build/intermediates/cmake/debug/obj/x86/libcpufeatures.so	6239289f0f014d5d
+77	427	0	CMakeFiles/system.dir/src/main/cpp/system.cpp.o	60da84faa46506de
+427	443	0	../../../../build/intermediates/cmake/debug/obj/x86/libsystem.so	e1f104cd2508dbee

@@ -1,0 +1,8 @@
+Executable : /home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+--build
+/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86
+--target
+ancillary
+jvmArgs : 
+

@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "/home/pt/project/android/ShadowsocksRR/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86 --target clean"
+  ],
+  "libraries": {
+    "ancillary-Debug-x86": {
+      "artifactName": "ancillary",
+      "buildCommand": "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86 --target ancillary",
+      "abi": "x86",
+      "output": "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/x86/libancillary.so"
+    },
+    "system-Debug-x86": {
+      "artifactName": "system",
+      "buildCommand": "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86 --target system",
+      "abi": "x86",
+      "output": "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/x86/libsystem.so"
+    },
+    "cpufeatures-Debug-x86": {
+      "artifactName": "cpufeatures",
+      "buildCommand": "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86 --target cpufeatures",
+      "abi": "x86",
+      "output": "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/x86/libcpufeatures.so"
+    }
+  }
+}
