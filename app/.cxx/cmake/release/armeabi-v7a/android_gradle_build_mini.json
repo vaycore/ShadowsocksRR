@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "D:\\project\\android\\SSR\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "W:\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\project\\android\\SSR\\app\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "ancillary-Release-armeabi-v7a": {
+      "artifactName": "ancillary",
+      "buildCommand": "W:\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\project\\android\\SSR\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ancillary",
+      "abi": "armeabi-v7a",
+      "output": "D:\\project\\android\\SSR\\app\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libancillary.so"
+    },
+    "system-Release-armeabi-v7a": {
+      "artifactName": "system",
+      "buildCommand": "W:\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\project\\android\\SSR\\app\\.cxx\\cmake\\release\\armeabi-v7a --target system",
+      "abi": "armeabi-v7a",
+      "output": "D:\\project\\android\\SSR\\app\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libsystem.so"
+    },
+    "cpufeatures-Release-armeabi-v7a": {
+      "artifactName": "cpufeatures",
+      "buildCommand": "W:\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\project\\android\\SSR\\app\\.cxx\\cmake\\release\\armeabi-v7a --target cpufeatures",
+      "abi": "armeabi-v7a",
+      "output": "D:\\project\\android\\SSR\\app\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libcpufeatures.so"
+    }
+  }
+}

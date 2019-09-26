@@ -1,0 +1,15 @@
+# ninja log v5
+0	133	0	CMakeFiles/cpufeatures.dir/src/main/cpp/cpufeatures/cpu-features.c.o	14cd7022287abddb
+134	193	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpufeatures.so	feecf9ebe9706ec3
+1	70	0	CMakeFiles/ancillary.dir/src/main/cpp/ancillary/fd_recv.c.o	69f286034d2c7ee
+4	71	0	CMakeFiles/ancillary.dir/src/main/cpp/ancillary/fd_send.c.o	d253ffacbcb64ab7
+71	125	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libancillary.so	cb9562ff12ef28fb
+1	97	0	CMakeFiles/system.dir/src/main/cpp/system.cpp.o	36bb52e923a1701e
+98	157	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsystem.so	a386142d4b37e310
+1	2498	0	CMakeFiles/cpufeatures.dir/src/main/cpp/cpufeatures/cpu-features.c.o	14cd7022287abddb
+2498	2554	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpufeatures.so	feecf9ebe9706ec3
+1	82	0	CMakeFiles/ancillary.dir/src/main/cpp/ancillary/fd_send.c.o	d253ffacbcb64ab7
+4	83	0	CMakeFiles/ancillary.dir/src/main/cpp/ancillary/fd_recv.c.o	69f286034d2c7ee
+83	137	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libancillary.so	cb9562ff12ef28fb
+2	99	0	CMakeFiles/system.dir/src/main/cpp/system.cpp.o	36bb52e923a1701e
+99	159	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsystem.so	a386142d4b37e310

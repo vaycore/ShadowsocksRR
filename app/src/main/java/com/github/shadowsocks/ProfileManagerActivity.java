@@ -378,30 +378,23 @@ public class ProfileManagerActivity extends AppCompatActivity implements View.On
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.fab_manual_add:
-                menu.toggle(true);
-                Profile profile = app.profileManager.createProfile();
-                app.profileManager.updateProfile(profile);
-                app.switchProfile(profile.id);
-                finish();
-                break;
-            case R.id.fab_qrcode_add:
-                menu.toggle(false);
-                qrcodeScan();
-                break;
-            case R.id.fab_nfc_add:
-                NfcAdd();
-                break;
-            case R.id.fab_import_add:
-                clipboardImportAdd();
-                break;
-            case R.id.fab_ssr_sub:
-                menu.toggle(true);
-                ssrsubDialog();
-                break;
-            default:
-                break;
+        int id = v.getId();
+        if (id == R.id.fab_manual_add) {
+            menu.toggle(true);
+            Profile profile = app.profileManager.createProfile();
+            app.profileManager.updateProfile(profile);
+            app.switchProfile(profile.id);
+            finish();
+        } else if (id == R.id.fab_qrcode_add) {
+            menu.toggle(false);
+            qrcodeScan();
+        } else if (id == R.id.fab_nfc_add) {
+            NfcAdd();
+        } else if (id == R.id.fab_import_add) {
+            clipboardImportAdd();
+        } else if (id == R.id.fab_ssr_sub) {
+            menu.toggle(true);
+            ssrsubDialog();
         }
     }
 
@@ -882,21 +875,19 @@ public class ProfileManagerActivity extends AppCompatActivity implements View.On
 
     @Override
     public boolean onMenuItemClick(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_export:
-                List<Profile> allProfiles = app.profileManager.getAllProfiles();
-                if (allProfiles != null && !allProfiles.isEmpty()) {
-                    clipboard.setPrimaryClip(ClipData.newPlainText(null, makeString(allProfiles, "\n")));
-                    ToastUtils.showShort(R.string.action_export_msg);
-                } else {
-                    ToastUtils.showShort(R.string.action_export_err);
-                }
-                return true;
-            case R.id.action_full_test:
-                pingAll();
-                return true;
-            default:
-                break;
+        int id = item.getItemId();
+        if (id == R.id.action_export) {
+            List<Profile> allProfiles = app.profileManager.getAllProfiles();
+            if (allProfiles != null && !allProfiles.isEmpty()) {
+                clipboard.setPrimaryClip(ClipData.newPlainText(null, makeString(allProfiles, "\n")));
+                ToastUtils.showShort(R.string.action_export_msg);
+            } else {
+                ToastUtils.showShort(R.string.action_export_err);
+            }
+            return true;
+        } else if (id == R.id.action_full_test) {
+            pingAll();
+            return true;
         }
         return false;
     }

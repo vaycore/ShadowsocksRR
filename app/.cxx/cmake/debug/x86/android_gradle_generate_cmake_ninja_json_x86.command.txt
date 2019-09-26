@@ -1,0 +1,15 @@
+Executable : /home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/home/pt/project/android/ShadowsocksRR/app
+-B/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86
+-DANDROID_ABI=x86
+-DANDROID_PLATFORM=android-21
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/x86
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=/home/pt/Android/Sdk/ndk-bundle
+-DCMAKE_CXX_FLAGS=-frtti -fexceptions
+-DCMAKE_TOOLCHAIN_FILE=/home/pt/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/home/pt/Android/Sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

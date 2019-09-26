@@ -1,0 +1,2 @@
+[1/2] Building CXX object CMakeFiles/system.dir/src/main/cpp/system.cpp.o
+[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\armeabi-v7a\libsystem.so

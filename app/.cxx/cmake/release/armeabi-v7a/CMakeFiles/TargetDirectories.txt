@@ -1,0 +1,5 @@
+D:/project/android/SSR/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/system.dir
+D:/project/android/SSR/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/cpufeatures.dir
+D:/project/android/SSR/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/project/android/SSR/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/ancillary.dir
+D:/project/android/SSR/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir

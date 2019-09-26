@@ -1,20 +1,20 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 buildscript {
     ext {
-        support_version = "28.0.0"
-        compile_Version = 28
-        min_version = 21
-        target_version = 26
+//        support_version = "29.0.4"
+//        compile_Version = 29
+//        min_version = 21
+//        target_version = 28
     }
 }
 
 android {
-    compileSdkVersion compile_Version
+    compileSdkVersion 29
     defaultConfig {
-        applicationId "com.github.shadowsocks"
-        minSdkVersion min_version
-        targetSdkVersion target_version
+//        applicationId "com.github.shadowsocks"
+        minSdkVersion 21
+        targetSdkVersion 28
         versionCode 325    // multiDex的一些相关配置，这样配置可以让你的编译速度更快
         dexOptions {
             // 让它不要对Lib做preDexing
@@ -28,7 +28,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-frtti -fexceptions"
-                abiFilters "armeabi-v7a", "x86"
+                abiFilters "armeabi-v7a"/*, "x86"*/
             }
         }
         multiDexEnabled true
@@ -70,15 +70,15 @@ dependencies {
     implementation "com.github.jorgecastilloprz:fabprogresscircle:1.01"
     implementation "com.google.android.gms:play-services-analytics:17.0.0"
     implementation "com.google.android.gms:play-services-gcm:17.0.0"
-    implementation "com.j256.ormlite:ormlite-android:5.0"
+    implementation "com.j256.ormlite:ormlite-android:5.1"
     implementation "com.mikepenz:fastadapter:2.1.5"
     implementation "com.mikepenz:iconics-core:2.8.2"
     implementation "com.mikepenz:materialdrawer:5.8.1"
     implementation "com.mikepenz:materialize:1.0.0"
-    implementation "com.twofortyfouram:android-plugin-api-for-locale:1.0.2"
-    implementation "dnsjava:dnsjava:2.1.7"
+    implementation "com.twofortyfouram:android-plugin-api-for-locale:1.0.4"
+    implementation "dnsjava:dnsjava:2.1.9"
     implementation "eu.chainfire:libsuperuser:latest.release"
-    implementation "me.dm7.barcodescanner:zxing:1.9.8"
+    implementation "me.dm7.barcodescanner:zxing:1.9.13"
     implementation "net.glxn.qrgen:android:2.0"
     implementation "com.squareup.okhttp3:okhttp:3.13.1"
     implementation "com.google.code.findbugs:jsr305:3.0.2"

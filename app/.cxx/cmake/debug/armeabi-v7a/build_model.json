@@ -1,0 +1,69 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "D:\\project\\android\\SSR",
+      "sdkFolder": "W:\\SDK",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\project\\android\\SSR\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "D:\\project\\android\\SSR\\app",
+      "makeFile": "D:\\project\\android\\SSR\\app\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "D:\\project\\android\\SSR\\.cxx",
+      "cxxFolder": "D:\\project\\android\\SSR\\app\\.cxx",
+      "ndkFolder": "W:\\SDK\\ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      "-frtti -fexceptions"
+    ],
+    "variantName": "debug",
+    "soFolder": "D:\\project\\android\\SSR\\app\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "D:\\project\\android\\SSR\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a",
+  "jsonFile": "D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug\\armeabi-v7a",
+  "objFolder": "D:\\project\\android\\SSR\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a",
+  "buildCommandFile": "D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\build_command.txt",
+  "buildOutputFile": "D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\build_output.txt",
+  "modelOutputFile": "D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug\\armeabi-v7a\\CMakeLists.txt",
+    "toolchainWrapperFile": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug\\armeabi-v7a\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug\\armeabi-v7a\\build_generation_state.json",
+    "cacheKeyFile": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_key.json",
+    "compilerCacheUseFile": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "D:\\project\\android\\SSR\\app\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\json_generation_record.json",
+  "compileCommandsJsonFile": "D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\compile_commands.json"
+}

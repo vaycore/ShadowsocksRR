@@ -1,0 +1,5 @@
+/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86/CMakeFiles/ancillary.dir
+/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86/CMakeFiles/cpufeatures.dir
+/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/x86/CMakeFiles/system.dir
