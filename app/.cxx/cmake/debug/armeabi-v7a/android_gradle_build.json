@@ -1,10 +1,10 @@
 
 {
-	"buildFiles" : [ "/home/pt/project/android/ShadowsocksRR/app/CMakeLists.txt" ],
+	"buildFiles" : [ "D:/project/android/SSR/app/CMakeLists.txt" ],
 	"cFileExtensions" : [ "c" ],
 	"cleanCommands" : 
 	[
-		"/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a --target clean"
+		"W:\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target clean"
 	],
 	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
@@ -13,69 +13,69 @@
 		{
 			"abi" : "armeabi-v7a",
 			"artifactName" : "ancillary",
-			"buildCommand" : "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a --target ancillary",
+			"buildCommand" : "W:\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target ancillary",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dancillary_EXPORTS -I../../../../src/main/cpp/cpufeatures -I../../../../src/main/cpp/ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/home/pt/project/android/ShadowsocksRR/app/src/main/cpp/ancillary/fd_recv.c",
-					"workingDirectory" : "/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a"
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dancillary_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\cpufeatures -I..\\..\\..\\..\\src\\main\\cpp\\ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/project/android/SSR/app/src/main/cpp/ancillary/fd_recv.c",
+					"workingDirectory" : "D:/project/android/SSR/app/.cxx/cmake/debug/armeabi-v7a"
 				},
 				
 				{
-					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dancillary_EXPORTS -I../../../../src/main/cpp/cpufeatures -I../../../../src/main/cpp/ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/home/pt/project/android/ShadowsocksRR/app/src/main/cpp/ancillary/fd_send.c",
-					"workingDirectory" : "/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a"
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dancillary_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\cpufeatures -I..\\..\\..\\..\\src\\main\\cpp\\ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/project/android/SSR/app/src/main/cpp/ancillary/fd_send.c",
+					"workingDirectory" : "D:/project/android/SSR/app/.cxx/cmake/debug/armeabi-v7a"
 				}
 			],
-			"output" : "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libancillary.so",
-			"toolchain" : "427997980406692562"
+			"output" : "D:/project/android/SSR/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libancillary.so",
+			"toolchain" : "2771110973"
 		},
 		"cpufeatures-Debug-armeabi-v7a" : 
 		{
 			"abi" : "armeabi-v7a",
 			"artifactName" : "cpufeatures",
-			"buildCommand" : "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a --target cpufeatures",
+			"buildCommand" : "W:\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target cpufeatures",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dcpufeatures_EXPORTS -I../../../../src/main/cpp/cpufeatures -I../../../../src/main/cpp/ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/home/pt/project/android/ShadowsocksRR/app/src/main/cpp/cpufeatures/cpu-features.c",
-					"workingDirectory" : "/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a"
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcpufeatures_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\cpufeatures -I..\\..\\..\\..\\src\\main\\cpp\\ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/project/android/SSR/app/src/main/cpp/cpufeatures/cpu-features.c",
+					"workingDirectory" : "D:/project/android/SSR/app/.cxx/cmake/debug/armeabi-v7a"
 				}
 			],
-			"output" : "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libcpufeatures.so",
-			"toolchain" : "427997980406692562"
+			"output" : "D:/project/android/SSR/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libcpufeatures.so",
+			"toolchain" : "2771110973"
 		},
 		"system-Debug-armeabi-v7a" : 
 		{
 			"abi" : "armeabi-v7a",
 			"artifactName" : "system",
-			"buildCommand" : "/home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a --target system",
+			"buildCommand" : "W:\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\project\\android\\SSR\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target system",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dsystem_EXPORTS -I../../../../src/main/cpp/cpufeatures -I../../../../src/main/cpp/ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
-					"src" : "/home/pt/project/android/ShadowsocksRR/app/src/main/cpp/system.cpp",
-					"workingDirectory" : "/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a"
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dsystem_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp\\cpufeatures -I..\\..\\..\\..\\src\\main\\cpp\\ancillary  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/project/android/SSR/app/src/main/cpp/system.cpp",
+					"workingDirectory" : "D:/project/android/SSR/app/.cxx/cmake/debug/armeabi-v7a"
 				}
 			],
-			"output" : "/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libsystem.so",
-			"toolchain" : "427997980406692562"
+			"output" : "D:/project/android/SSR/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libsystem.so",
+			"toolchain" : "2771110973"
 		}
 	},
 	"toolchains" : 
 	{
-		"427997980406692562" : 
+		"2771110973" : 
 		{
-			"cCompilerExecutable" : "/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
-			"cppCompilerExecutable" : "/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+			"cCompilerExecutable" : "W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
 		}
 	}
 }

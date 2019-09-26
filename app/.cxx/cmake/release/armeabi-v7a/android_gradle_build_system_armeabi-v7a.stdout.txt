@@ -1,0 +1,4 @@
+[1/4] Building C object CMakeFiles/cpufeatures.dir/src/main/cpp/cpufeatures/cpu-features.c.o
+[2/4] Linking C shared library ..\..\..\..\build\intermediates\cmake\release\obj\armeabi-v7a\libcpufeatures.so
+[3/4] Building CXX object CMakeFiles/system.dir/src/main/cpp/system.cpp.o
+[4/4] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\release\obj\armeabi-v7a\libsystem.so

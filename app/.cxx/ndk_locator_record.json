@@ -1,5 +1,5 @@
 {
-  "ndkFolder": "/home/pt/Android/Sdk/ndk-bundle",
+  "ndkFolder": "W:\\SDK\\ndk-bundle",
   "messages": [
     {
       "level": "INFO",
@@ -7,39 +7,27 @@
     },
     {
       "level": "INFO",
-      "message": "ndk.dir in local.properties is /home/pt/Android/Sdk/ndk-bundle"
+      "message": "ndk.dir in local.properties is W:\\SDK\\ndk-bundle"
     },
     {
       "level": "INFO",
-      "message": "ANDROID_NDK_HOME environment variable is /home/pt/Android/Sdk/ndk-bundle"
+      "message": "ANDROID_NDK_HOME environment variable is not set"
     },
     {
       "level": "INFO",
-      "message": "sdkFolder is /home/pt/Android/Sdk"
-    },
-    {
-      "level": "WARN",
-      "message": "Support for ANDROID_NDK_HOME is deprecated and will be removed in the future. Use android.ndkVersion in build.gradle instead."
+      "message": "sdkFolder is W:\\SDK"
     },
     {
       "level": "INFO",
-      "message": "Considering /home/pt/Android/Sdk/ndk-bundle by ndk.dir"
+      "message": "Considering W:\\SDK\\ndk-bundle by ndk.dir"
     },
     {
       "level": "INFO",
-      "message": "Considering /home/pt/Android/Sdk/ndk-bundle by ANDROID_NDK_HOME"
+      "message": "Considering W:\\SDK\\ndk-bundle in SDK ndk-bundle folder"
     },
     {
       "level": "INFO",
-      "message": "Considering /home/pt/Android/Sdk/ndk-bundle in SDK ndk-bundle folder"
-    },
-    {
-      "level": "INFO",
-      "message": "Considering /home/pt/Android/Sdk/ndk/20.0.5594570 in SDK ndk folder"
-    },
-    {
-      "level": "INFO",
-      "message": "Found requested ndk.dir (/home/pt/Android/Sdk/ndk-bundle) which has version 20.0.5594570"
+      "message": "Found requested ndk.dir (W:\\SDK\\ndk-bundle) which has version 20.0.5594570"
     }
   ]
 }

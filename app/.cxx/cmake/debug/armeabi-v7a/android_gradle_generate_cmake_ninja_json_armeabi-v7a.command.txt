@@ -1,15 +1,15 @@
-Executable : /home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake
+Executable : W:\SDK\cmake\3.6.4111459\bin\cmake.exe
 arguments : 
--H/home/pt/project/android/ShadowsocksRR/app
--B/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a
+-HD:\project\android\SSR\app
+-BD:\project\android\SSR\app\.cxx\cmake\debug\armeabi-v7a
 -DANDROID_ABI=armeabi-v7a
 -DANDROID_PLATFORM=android-21
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/pt/project/android/ShadowsocksRR/app/build/intermediates/cmake/debug/obj/armeabi-v7a
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\project\android\SSR\app\build\intermediates\cmake\debug\obj\armeabi-v7a
 -DCMAKE_BUILD_TYPE=Debug
--DANDROID_NDK=/home/pt/Android/Sdk/ndk-bundle
+-DANDROID_NDK=W:\SDK\ndk-bundle
 -DCMAKE_CXX_FLAGS=-frtti -fexceptions
--DCMAKE_TOOLCHAIN_FILE=/home/pt/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake
--DCMAKE_MAKE_PROGRAM=/home/pt/Android/Sdk/cmake/3.6.4111459/bin/ninja
+-DCMAKE_TOOLCHAIN_FILE=W:\SDK\ndk-bundle\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=W:\SDK\cmake\3.6.4111459\bin\ninja.exe
 -GAndroid Gradle - Ninja
 jvmArgs : 
 

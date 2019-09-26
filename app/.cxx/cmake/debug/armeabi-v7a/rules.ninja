@@ -12,6 +12,44 @@
 # =============================================================================
 
 #############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__system
+  depfile = $DEP_FILE
+  deps = gcc
+  command = W:\SDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $IN_ABS
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX shared library.
+
+rule CXX_SHARED_LIBRARY_LINKER__system
+  command = cmd.exe /C "$PRE_LINK && W:\SDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX shared library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__cpufeatures
+  depfile = $DEP_FILE
+  deps = gcc
+  command = W:\SDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $IN_ABS
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C shared library.
+
+rule C_SHARED_LIBRARY_LINKER__cpufeatures
+  command = cmd.exe /C "$PRE_LINK && W:\SDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C shared library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for running custom commands.
 
 rule CUSTOM_COMMAND
@@ -25,7 +63,7 @@ rule CUSTOM_COMMAND
 rule C_COMPILER__ancillary
   depfile = $DEP_FILE
   deps = gcc
-  command = /home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $IN_ABS
+  command = W:\SDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $IN_ABS
   description = Building C object $out
 
 
@@ -33,46 +71,8 @@ rule C_COMPILER__ancillary
 # Rule for linking C shared library.
 
 rule C_SHARED_LIBRARY_LINKER__ancillary
-  command = $PRE_LINK && /home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = cmd.exe /C "$PRE_LINK && W:\SDK\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe  --target=armv7-none-linux-androideabi21 --gcc-toolchain=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=W:/SDK/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C shared library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling C files.
-
-rule C_COMPILER__cpufeatures
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $IN_ABS
-  description = Building C object $out
-
-
-#############################################
-# Rule for linking C shared library.
-
-rule C_SHARED_LIBRARY_LINKER__cpufeatures
-  command = $PRE_LINK && /home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking C shared library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__system
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $IN_ABS
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX shared library.
-
-rule CXX_SHARED_LIBRARY_LINKER__system
-  command = $PRE_LINK && /home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/pt/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
 
@@ -80,7 +80,7 @@ rule CXX_SHARED_LIBRARY_LINKER__system
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake -H/home/pt/project/android/ShadowsocksRR/app -B/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a
+  command = W:\SDK\cmake\3.6.4111459\bin\cmake.exe -HD:\project\android\SSR\app -BD:\project\android\SSR\app\.cxx\cmake\debug\armeabi-v7a
   description = Re-running CMake...
   generator = 1
 
@@ -89,7 +89,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /home/pt/Android/Sdk/cmake/3.6.4111459/bin/ninja -t clean
+  command = W:\SDK\cmake\3.6.4111459\bin\ninja.exe -t clean
   description = Cleaning all built files...
 
 
@@ -97,6 +97,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /home/pt/Android/Sdk/cmake/3.6.4111459/bin/ninja -t targets
+  command = W:\SDK\cmake\3.6.4111459\bin\ninja.exe -t targets
   description = All primary targets available:
 

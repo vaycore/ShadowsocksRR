@@ -1,7 +1,7 @@
-Executable : /home/pt/Android/Sdk/cmake/3.6.4111459/bin/cmake
+Executable : W:\SDK\cmake\3.6.4111459\bin\cmake.exe
 arguments : 
 --build
-/home/pt/project/android/ShadowsocksRR/app/.cxx/cmake/debug/armeabi-v7a
+D:\project\android\SSR\app\.cxx\cmake\debug\armeabi-v7a
 --target
 system
 jvmArgs : 

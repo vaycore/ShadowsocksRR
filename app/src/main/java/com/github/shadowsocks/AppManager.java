@@ -125,66 +125,64 @@ public class AppManager extends AppCompatActivity implements Toolbar.OnMenuItemC
     public boolean onMenuItemClick(MenuItem item) {
         ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
         String proxiedAppString = null;
-        switch (item.getItemId()) {
-            case R.id.action_apply_all:
-                List<Profile> profiles = app.profileManager.getAllProfiles();
-                if (profiles != null) {
-                    proxiedAppString = profile.individual;
-                    for (Profile p : profiles) {
-                        p.individual = proxiedAppString;
-                        app.profileManager.updateProfile(p);
-                    }
-                    ToastUtils.showShort(R.string.action_apply_all);
-                } else {
-                    ToastUtils.showShort(R.string.action_export_err);
-                }
-                return true;
-            case R.id.action_export:
-                boolean bypass = profile.bypass;
+        int id = item.getItemId();
+        if (id == R.id.action_apply_all) {
+            List<Profile> profiles = app.profileManager.getAllProfiles();
+            if (profiles != null) {
                 proxiedAppString = profile.individual;
-                ClipData clip = ClipData.newPlainText(Constants.Key.individual, bypass + "\n" + proxiedAppString);
-                if (clipboard != null) {
-                    clipboard.setPrimaryClip(clip);
-                    ToastUtils.showShort(R.string.action_export_msg);
+                for (Profile p : profiles) {
+                    p.individual = proxiedAppString;
+                    app.profileManager.updateProfile(p);
                 }
-                return true;
-            case R.id.action_import:
-                if (clipboard != null && clipboard.hasPrimaryClip()) {
-                    CharSequence proxiedAppSequence = clipboard.getPrimaryClip().getItemAt(0).getText();
-                    if (proxiedAppSequence != null) {
-                        proxiedAppString = proxiedAppSequence.toString();
-                        if (!TextUtils.isEmpty(proxiedAppString)) {
-                            int i = proxiedAppString.indexOf('\n');
-                            try {
-                                String enabled;
-                                String apps;
-                                if (i < 0) {
-                                    enabled = proxiedAppString;
-                                    apps = "";
-                                } else {
-                                    enabled = proxiedAppString.substring(0, i);
-                                    apps = proxiedAppString.substring(i + 1);
-                                }
-
-                                bypassSwitch.setChecked(Boolean.parseBoolean(enabled));
-                                profile.individual = apps;
-                                app.profileManager.updateProfile(profile);
-                                ToastUtils.showShort(R.string.action_import_msg);
-                                appListView.setVisibility(View.GONE);
-                                loadingView.setVisibility(View.VISIBLE);
-                                initProxiedApps(apps);
-                                reloadApps();
-                                return true;
-                            } catch (Exception e) {
-                                ToastUtils.showShort(R.string.action_import_err);
+                ToastUtils.showShort(R.string.action_apply_all);
+            } else {
+                ToastUtils.showShort(R.string.action_export_err);
+            }
+            return true;
+        } else if (id == R.id.action_export) {
+            boolean bypass = profile.bypass;
+            proxiedAppString = profile.individual;
+            ClipData clip = ClipData.newPlainText(Constants.Key.individual, bypass + "\n" + proxiedAppString);
+            if (clipboard != null) {
+                clipboard.setPrimaryClip(clip);
+                ToastUtils.showShort(R.string.action_export_msg);
+            }
+            return true;
+        } else if (id == R.id.action_import) {
+            if (clipboard != null && clipboard.hasPrimaryClip()) {
+                CharSequence proxiedAppSequence = clipboard.getPrimaryClip().getItemAt(0).getText();
+                if (proxiedAppSequence != null) {
+                    proxiedAppString = proxiedAppSequence.toString();
+                    if (!TextUtils.isEmpty(proxiedAppString)) {
+                        int i = proxiedAppString.indexOf('\n');
+                        try {
+                            String enabled;
+                            String apps;
+                            if (i < 0) {
+                                enabled = proxiedAppString;
+                                apps = "";
+                            } else {
+                                enabled = proxiedAppString.substring(0, i);
+                                apps = proxiedAppString.substring(i + 1);
                             }
+
+                            bypassSwitch.setChecked(Boolean.parseBoolean(enabled));
+                            profile.individual = apps;
+                            app.profileManager.updateProfile(profile);
+                            ToastUtils.showShort(R.string.action_import_msg);
+                            appListView.setVisibility(View.GONE);
+                            loadingView.setVisibility(View.VISIBLE);
+                            initProxiedApps(apps);
+                            reloadApps();
+                            return true;
+                        } catch (Exception e) {
+                            ToastUtils.showShort(R.string.action_import_err);
                         }
                     }
                 }
-                ToastUtils.showShort(R.string.action_import_err);
-                return false;
-            default:
-                break;
+            }
+            ToastUtils.showShort(R.string.action_import_err);
+            return false;
         }
         return false;
     }
